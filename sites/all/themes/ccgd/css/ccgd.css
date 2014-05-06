@@ -1,0 +1,8 @@
+.region-header{
+  background: url(../images/ccgd-banner-home.png);
+
+}
+
+#site-name > strong:nth-child(1) > a:nth-child(1) > span:nth-child(1){
+  visibility: hidden;
+}
