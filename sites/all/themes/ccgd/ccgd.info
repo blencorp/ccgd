@@ -41,3 +41,7 @@ core = "7.x"
 project = "responsive_bartik"
 datestamp = "1398976128"
 
+;----------// Layout plugins
+
+  ; Panels Module layouts
+  plugins[panels][layouts] = layouts/panels
