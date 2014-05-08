@@ -12,7 +12,9 @@ stylesheets[print][] = css/print.css
 
 scripts[] = js/collapsible-menu.js
 
+regions[ccgd_menu] = CCGD Menu
 regions[header] = Header
+regions[page_hero] = Hero
 regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
