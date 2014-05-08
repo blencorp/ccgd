@@ -10,7 +10,7 @@ function ccgd_ccgd_two_column_right_panels_layouts() {
     'category' => t('CCGD'),
     'icon' => 'ccgd_two_column_right.png',
     'theme' => 'ccgd_two_column_right',
-    'admin css' => 'ccgd_two_column_right.admin.css',
+    'admin css' => 'ccgd_two_column_right.css',
     'theme arguments' => array('id', 'content'),
     'regions' => array(
       'ccgd_two_column_right_top'    => t('Top (conditional)'),

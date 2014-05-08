@@ -45,3 +45,7 @@ datestamp = "1398976128"
 
   ; Panels Module layouts
   plugins[panels][layouts] = layouts/panels
+
+;---------// Theme Settings
+
+settings[bigscreen_ccgd_two_column_right] = two-75-25
