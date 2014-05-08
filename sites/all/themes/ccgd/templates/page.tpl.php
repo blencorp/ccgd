@@ -97,14 +97,14 @@
 
   <?php if ($page['ccgd_menu']): ?>
     <div id="ccgd-menu">
-      <?php render($page['ccgd_menu']); ?>
+      <?php print render ($page['ccgd_menu']); ?>
     </div> 
   <?php endif; ?>
 </header>
 
-<?php if ($page_hero): ?>
+<?php if ($page['page_hero']): ?>
   <div id="page-hero" class="clearfix">
-    <?php print $page_hero; ?>
+    <?php print render($page['page_hero']); ?>
   </div>
 <?php endif; ?>
 
