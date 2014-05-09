@@ -1,0 +1,12 @@
+name = Location
+description = This feature has the custom page for location
+core = 7.x
+package = CCGD
+version = 7.x-1.0
+project = location
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = location
+project path = sites/all/modules/features
