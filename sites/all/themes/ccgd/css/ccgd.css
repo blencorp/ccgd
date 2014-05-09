@@ -1,3 +1,26 @@
 .tb-megamenu {
   background: none;
 }
+
+#header {
+  background: url(../images/ccgd-banner-home.png) no-repeat;
+  height: 438px;
+  background-size: 100%;
+}
+
+#content .section { 
+ // padding: 0 15px;
+  margin-top: -129px;
+  //margin-left: 200px;
+  //position: relative;
+  background:white;
+  //width:100%;
+
+display:block;
+margin-left:0;
+margin-right:0;
+//position:absolute;
+width: 100%;
+    border:1px solid black;
+    height:100%;
+}
