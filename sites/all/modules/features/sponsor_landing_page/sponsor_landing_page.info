@@ -1,0 +1,13 @@
+name = Sponsor Landing Page
+description = This feature has the landing page for sponsors
+core = 7.x
+package = CCGD
+version = 7.x-1.0
+project = sponsor_landing_page
+dependencies[] = cod_sponsors
+dependencies[] = ctools
+dependencies[] = page_manager
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:2
+features[page_manager_pages][] = sponsor_landing_page
+project path = sites/all/modules/features
