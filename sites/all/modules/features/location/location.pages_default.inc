@@ -105,6 +105,28 @@ function location_default_page_manager_pages() {
     $pane->uuid = '6bd0331a-90a8-4e4c-a7c5-52ad3812c1d3';
     $display->content['new-6bd0331a-90a8-4e4c-a7c5-52ad3812c1d3'] = $pane;
     $display->panels['right'][0] = 'new-6bd0331a-90a8-4e4c-a7c5-52ad3812c1d3';
+    $pane = new stdClass();
+    $pane->pid = 'new-e47b5e7d-31dc-4eda-8187-6f8e283f6f23';
+    $pane->panel = 'right';
+    $pane->type = 'block';
+    $pane->subtype = 'block-1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Twitter Feed',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'e47b5e7d-31dc-4eda-8187-6f8e283f6f23';
+    $display->content['new-e47b5e7d-31dc-4eda-8187-6f8e283f6f23'] = $pane;
+    $display->panels['right'][1] = 'new-e47b5e7d-31dc-4eda-8187-6f8e283f6f23';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-6bd0331a-90a8-4e4c-a7c5-52ad3812c1d3';
   $handler->conf['display'] = $display;

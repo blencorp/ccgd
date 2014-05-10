@@ -129,6 +129,28 @@ function blog_landing_page_default_page_manager_pages() {
     $pane->uuid = '168c530a-3af7-4c55-aa03-f69f2e66e208';
     $display->content['new-168c530a-3af7-4c55-aa03-f69f2e66e208'] = $pane;
     $display->panels['right'][0] = 'new-168c530a-3af7-4c55-aa03-f69f2e66e208';
+    $pane = new stdClass();
+    $pane->pid = 'new-702cbaa2-7c14-41c7-87a7-d83b4993330d';
+    $pane->panel = 'right';
+    $pane->type = 'block';
+    $pane->subtype = 'block-1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Twitter Feed',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = '702cbaa2-7c14-41c7-87a7-d83b4993330d';
+    $display->content['new-702cbaa2-7c14-41c7-87a7-d83b4993330d'] = $pane;
+    $display->panels['right'][1] = 'new-702cbaa2-7c14-41c7-87a7-d83b4993330d';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
