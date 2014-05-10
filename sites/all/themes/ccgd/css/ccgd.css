@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 .tb-megamenu {
   background: none;
 }
@@ -31,6 +33,10 @@ body {
 .region-header {
   margin: 5px 0;
 }
+
+/**
+ * Mega Menu.
+ */
 
 .tb-megamenu .nav > li > a,
 .tb-megamenu .nav > .active > a, 
@@ -66,3 +72,13 @@ body {
   background: url(../images/menu-icon.png) no-repeat 0 50% !important;
 }
 
+/** 
+ * Headings.
+ */
+
+#content h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.2em;
+  letter-spacing: -1px;
+  padding-bottom: 15px;
+}
