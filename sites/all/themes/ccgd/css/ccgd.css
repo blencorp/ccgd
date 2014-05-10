@@ -2,25 +2,67 @@
   background: none;
 }
 
+body {
+  background: url(../images/ccgd-banner-home.png) #fff no-repeat 50% 50px;
+}
+
+#page-wrapper,
+#page,
+#main-wrapper {
+  background: none;
+}
+
 #header {
-  background: url(../images/ccgd-banner-home.png) no-repeat;
-  height: 438px;
-  background-size: 100%;
+  background: #fff;
 }
 
-#content .section { 
- // padding: 0 15px;
-  margin-top: -129px;
-  //margin-left: 200px;
-  //position: relative;
-  background:white;
-  //width:100%;
-
-display:block;
-margin-left:0;
-margin-right:0;
-//position:absolute;
-width: 100%;
-    border:1px solid black;
-    height:100%;
+#main #content {
+  background: #fff;
 }
+
+#main #content .panel-panel.header {
+  display: none;
+}
+
+.front #main-wrapper {
+  margin-top: 370px;
+}
+
+.region-header {
+  margin: 5px 0;
+}
+
+.tb-megamenu .nav > li > a,
+.tb-megamenu .nav > .active > a, 
+.tb-megamenu .nav > .active > a:hover, 
+.tb-megamenu .nav > .active > a:focus,
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle, 
+.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, 
+.tb-megamenu .nav > li.dropdown.open.active > a:hover {
+  background: none;
+  border: none;
+  color: #b7b9bb;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 25px;
+}
+
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle .caret, 
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle .caret, 
+.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #b7b9bb;
+  border-bottom-color: #b7b9bb;
+}
+
+.tb-megamenu .nav > li.mega.menu-register > a {
+  background: url(../images/login-icon.png) no-repeat 0 50%;
+}
+
+.tb-megamenu .nav > li.mega.menu-search > a {
+  background: url(../images/search-icon.png) no-repeat 0 50%;
+}
+
+.tb-megamenu .nav > li.mega.menu-home > a {
+  background: url(../images/menu-icon.png) no-repeat 0 50% !important;
+}
+

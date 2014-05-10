@@ -87,27 +87,6 @@
  * @ingroup themeable
  */
 ?>
-
-<header id="top-header" class="clearfix">
-  <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-  <?php endif; ?>
-
-  <?php if ($page['ccgd_menu']): ?>
-    <div id="ccgd-menu">
-      <?php print render ($page['ccgd_menu']); ?>
-    </div> 
-  <?php endif; ?>
-</header>
-
-<?php if ($page['page_hero']): ?>
-  <div id="page-hero" class="clearfix">
-    <?php print render($page['page_hero']); ?>
-  </div>
-<?php endif; ?>
-
 <div id="page-wrapper"><div id="page">
 
   <header id="header" role="banner" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
@@ -128,6 +107,13 @@
       </nav> <!-- /#secondary-menu -->
     <?php endif; ?>
     
+    
+    <?php if ($logo): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+      </a>
+    <?php endif; ?>
+
     <?php if ($site_name || $site_slogan): ?>
       <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
 
@@ -156,6 +142,22 @@
 
     <?php print render($page['header']); ?>
 
+    <?php if ($main_menu): ?>
+      <nav id="main-menu" role="navigation" class="navigation">
+        <?php print theme('links__system_main_menu', array(
+          'links' => $main_menu,
+          'attributes' => array(
+            'id' => 'main-menu-links',
+            'class' => array('links', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Main menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+      </nav> <!-- /#main-menu -->
+    <?php endif; ?>
   </div></header> <!-- /.section, /#header -->
 
   <?php if ($messages): ?>
