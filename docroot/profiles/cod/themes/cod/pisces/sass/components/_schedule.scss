@@ -1,0 +1,79 @@
+.page-node-schedule .view {
+  .view-header {
+    h2 {
+      margin-bottom: 18px;
+    }
+    .view-cod-event-rooms {
+      display: none;
+    }
+  }
+  .view-content {
+    h3 {
+      font-size: 0.9em;
+      font-weight: normal;
+      margin: 0;
+      padding: 18px 4px 0 4px;
+    }
+    .views-row {
+      background-color: $blue;
+      border: 1px solid $white;
+      color: $white;
+      padding: 18px;
+      margin-bottom: 0;
+      a {
+        color: $white;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@include breakpoint($tab, true) {
+  .page-node-schedule .view {
+    .view-header {
+      .view-cod-event-rooms {
+        display: table;
+        table-layout: fixed;
+        margin-bottom: 10px;
+        margin-left: 8.56%;
+        width: 91.44%;
+      }
+      .view-cod-event-rooms .views-row {
+        background-color: transparent;
+        color: $gray;
+        display: table-cell;
+        font-size: 0.9em;
+        padding: 4px 6px;
+        text-align: center;
+        width: 2%;
+        margin-bottom: 0;
+      }
+    }
+    .view-content {
+      h3 {
+        border-top: 1px solid $gray;
+        float: left;
+        font-size: 0.9em;
+        font-weight: normal;
+        margin: 0;
+        padding: 10px 10px 0 0;
+        text-align: right;
+        width: 8.56%;
+      }
+      .timeslot {
+        display: table;
+        table-layout: fixed;
+        margin-left: 8.56%;
+        width: 91.44%;
+      }
+      .views-row {
+        border: 1px solid $white;
+        display: table-cell;
+        padding: 18px;
+        width: 2%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

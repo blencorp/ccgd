@@ -1,0 +1,16 @@
+name = Blog Landing page
+description = This feature has the blog page and settings
+core = 7.x
+package = CCGD
+version = 7.x-1.1
+project = blog_landing_page
+dependencies[] = page_manager
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = page_manager:pages_default:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[page_manager_pages][] = blog_landing_page
+features[views_view][] = blog
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/features

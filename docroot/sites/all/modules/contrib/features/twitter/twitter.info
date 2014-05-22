@@ -1,0 +1,11 @@
+name = Twitter
+description = This feature has the block for twitter
+core = 7.x
+package = CCGD
+version = 7.x-1.0
+project = twitter
+dependencies[] = features
+dependencies[] = twitter_block
+features[features_api][] = api:2
+features[filter][] = twitter
+project path = sites/all/modules/features
